@@ -1,14 +1,18 @@
-#Bem vindo aos códigos para prática da linguagem Python!
+<link rel="stylesheet" href="editormd/css/editormd.css" />
+<div id="test-editor">
+    <textarea style="display:none;">### Editor.md
 
-PUCPR: exercicios de estudo da matéria de Programação Imperativa
-
-SQLite: estudo sobre banco de dados
-
-Tkinter: biblioteca de criação de interfaces gráficas, usada para criar uma calculadora básica e um instalock para o jogo Valorant
-
-Training: Projetos pequenos para treinar diversos conhecimentos de python
-
-Códigos mais interessantes: 
-	- BotQuestionário: Bot para realização automatica de um questionário, feita com a-  biblioteca de automação PyAutoGui 
-	- Instalock: Programa automatizado para instalock de personagens no jogo Valorant
-	- Notifications: Programa de teste de uso da biblioteca Winotify, posteriormente usada como adicional no código de Papel, Pedra e Tesoura
+**Editor.md**: The open source embeddable online markdown editor, based on CodeMirror & jQuery & Marked.
+    </textarea>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="editormd/editormd.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("test-editor", {
+            // width  : "100%",
+            // height : "100%",
+            path   : "editormd/lib/"
+        });
+    });
+</script>
